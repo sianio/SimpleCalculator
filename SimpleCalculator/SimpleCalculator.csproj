@@ -5,4 +5,24 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Person.cs" />
+    <Compile Remove="InputConverterTest\UnitTest1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.16.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="InputConverterTest\obj\Debug\netcoreapp3.1\InputConverterTest.csprojAssemblyReference.cache" />
+    <None Remove="InputConverterTest\obj\InputConverterTest.csproj.nuget.dgspec.json" />
+    <None Remove="InputConverterTest\obj\project.assets.json" />
+    <None Remove="InputConverterTest\obj\InputConverterTest.csproj.nuget.g.props" />
+    <None Remove="InputConverterTest\obj\InputConverterTest.csproj.nuget.g.targets" />
+    <None Remove="InputConverterTest\obj\InputConverterTest.csproj.nuget.cache" />
+    <None Remove="InputConverterTest\obj\Debug\netcoreapp3.1\InputConverterTest.assets.cache" />
+  </ItemGroup>
 </Project>
